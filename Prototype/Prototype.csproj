@@ -1,0 +1,276 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{34648ADC-F1E9-46BD-A100-35C9B158E5DB}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Prototype</RootNamespace>
+    <AssemblyName>Prototype</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>D:\HCI Application\Prototype\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <AutorunEnabled>true</AutorunEnabled>
+    <ApplicationRevision>1</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>Prototype.Program</StartupObject>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>B22391F73F989CAB829D1CC8A920B5D442F5878E</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>Prototype_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>true</SignManifests>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="Microsoft.VisualBasic.PowerPacks.Vs, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Windows\PIN.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Windows\PIN.Designer.cs">
+      <DependentUpon>PIN.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Windows\BillStatus.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Windows\BillStatus.Designer.cs">
+      <DependentUpon>BillStatus.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Windows\DEACT.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Windows\DEACT.Designer.cs">
+      <DependentUpon>DEACT.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Windows\Electricity.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Windows\Electricity.Designer.cs">
+      <DependentUpon>Electricity.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Windows\Heating.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Windows\Heating.Designer.cs">
+      <DependentUpon>Heating.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Windows\Hot Water.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Windows\Hot Water.Designer.cs">
+      <DependentUpon>Hot Water.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Windows\Monitor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Windows\Monitor.Designer.cs">
+      <DependentUpon>Monitor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pages.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Windows\Security.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Windows\Security.Designer.cs">
+      <DependentUpon>Security.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Windows\Settings.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Windows\Settings.Designer.cs">
+      <DependentUpon>Settings.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Windows\Weather.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Windows\Weather.Designer.cs">
+      <DependentUpon>Weather.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Windows\PIN.resx">
+      <DependentUpon>PIN.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Windows\BillStatus.resx">
+      <DependentUpon>BillStatus.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Windows\DEACT.resx">
+      <DependentUpon>DEACT.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Windows\Electricity.resx">
+      <DependentUpon>Electricity.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Windows\Heating.resx">
+      <DependentUpon>Heating.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Windows\Hot Water.resx">
+      <DependentUpon>Hot Water.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Windows\Monitor.resx">
+      <DependentUpon>Monitor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Windows\Security.resx">
+      <DependentUpon>Security.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Windows\Settings.resx">
+      <DependentUpon>Settings.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Windows\Weather.resx">
+      <DependentUpon>Weather.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="app.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Prototype_TemporaryKey.pfx" />
+    <None Include="Resources\RainAndSnow.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Sunny.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SnowyAndSunny.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PartlyCloudyAndSunny.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\monitor.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Electricity.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\HotWater.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Security.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Settings.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BillStatus.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Heating.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.0,Profile=Client">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4 Client Profile %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.4.5">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 4.5</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Status-audio-volume-low-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Status-audio-volume-medium-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Status-audio-volume-high-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Status-audio-volume-muted-icon.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
